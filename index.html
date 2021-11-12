@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <div class="output"></div>
+      </div>
+      <div class="buttons">
+        <div class="row row-1">
+          <div class="btn btn-circle clear">
+            <button type="button" value="">C</button>
+          </div>
+          <div class="btn btn-circle parentheses">
+            <button type="button" value="(">(</button>
+          </div>
+          <div class="btn btn-circle parentheses">
+            <button type="button" value=")">)</button>
+          </div>
+          <div class="btn btn-circle operator">
+            <button type="button" value="/">/</button>
+          </div>
+        </div>
+        <div class="row row-2">
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="7">7</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="8">8</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="9">9</button>
+          </div>
+          <div class="btn btn-circle operator">
+            <button type="button" value="*">*</button>
+          </div>
+        </div>
+        <div class="row row-3">
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="4">4</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="5">5</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="6">6</button>
+          </div>
+          <div class="btn btn-circle operator">
+            <button type="button" value="+">+</button>
+          </div>
+        </div>
+        <div class="row row-4">
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="1">1</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="2">2</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="3">3</button>
+          </div>
+          <div class="btn btn-circle operator">
+            <button type="button" value="-">-</button>
+          </div>
+        </div>
+        <div class="row row-5">
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value=".">.</button>
+          </div>
+          <div class="btn btn-circle numOrPoint">
+            <button type="button" value="0">0</button>
+          </div>
+          <div class="btn btn-circle backspace">
+            <button type="button" value="backspace">
+              <i class="fas fa-backspace"></i>
+            </button>
+          </div>
+          <div class="btn btn-circle equals">
+            <button type="button" value="=">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

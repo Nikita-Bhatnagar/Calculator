@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 240px;
+  background-image: linear-gradient(rgb(80, 74, 74), rgb(20, 19, 19));
+  border-radius: 8px;
+}
+.screen {
+  height: 150px;
+  color: blanchedalmond;
+  position: relative;
+  width: 240px;
+}
+.screen .output {
+  position: absolute;
+  bottom: 0;
+  right: 35px;
+  font-size: 24px;
+  max-width: 175px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  height: 4px;
+  background-color: rgba(255, 235, 205, 0.171);
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.buttons {
+  padding: 10px 6px;
+}
+.btn {
+  padding: 4px;
+}
+
+.btn-circle button {
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px #000;
+}
+button {
+  padding: 6px 14px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: rgb(31, 28, 28);
+  color: rgba(255, 235, 205, 0.596);
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: rgb(63, 57, 57);
+}
+.clear button {
+  background-color: rgba(255, 208, 0, 0.644);
+  box-shadow: none;
+}
+.clear button:hover {
+  background-color: blanchedalmond;
+  color: rgba(255, 208, 0, 0.959);
+}
+
+.operator button {
+  background-color: rgba(195, 43, 226, 0.205);
+}
+.operator button:hover {
+  background-color: rgba(205, 121, 238, 0.61);
+}
+.equals button {
+  background-color: rgba(147, 20, 179, 0.966);
+  box-shadow: none;
+}
+.equals button:hover {
+  background-color: rgba(165, 70, 189, 0.966);
+}
+.fa-backspace {
+  pointer-events: none;
+}
